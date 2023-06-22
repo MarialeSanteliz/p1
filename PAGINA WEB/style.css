@@ -319,6 +319,7 @@ main{
 .cart-label{
     max-width: 320px;
     width: 20px;
+    cursor: pointer;
 }
 .cart-label img{
     width: 30px;
@@ -412,6 +413,7 @@ width: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px 30px;
     gap: 20px;
     background-color: #ffffff;
     border: 1px solid #000;
@@ -424,6 +426,7 @@ width: 250px;
 .item-title{
     font-weight: 600;
     font-size: 14px;
+    padding: 0px 10px;
 }
 .item-bit{
     font-weight: 300;
@@ -439,6 +442,7 @@ font-size: 16px;
 font-weight: 800;
 }
 .item-handler{
+    padding: 0px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
