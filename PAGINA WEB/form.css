@@ -1,0 +1,144 @@
+:root {
+    --color-black: #000;
+    --color-white: #ffffff;
+    --color-green: #2bc72b;
+    --color-pink: #fb6f92;
+    --color-grey: #a4ac86;
+    --color-pink2: #ffb5a7;
+    --color-pink3: #f8ad9d;
+}
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    background-image: url(./Imagenes/save-10_1600x.webp);
+    font-family: 'Merriweather', serif;
+    font-family: 'Urbanist', sans-serif;
+    font-family: 'Vollkorn', serif;
+
+}
+a{
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    color: var(--color-black);
+}
+.gradient-text{
+    background: linear-gradient(to right, #fb6f92, #a4ac86);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+.sec-form {
+min-height: 100vh;
+padding: 10px 15px;
+display: flex;
+align-items: center;
+justify-content: left; 
+}
+.formulario .box {
+border-color:#ffffff;
+border: 1px solid var(--color-black);
+padding: 40px 50px;
+border-radius: 20px;
+backdrop-filter: var(--color-white);
+}
+
+.formulario {
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    z-index: 1;
+}
+.formulario h1 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: 500px;
+}
+.formulario form {
+    margin: 20px 0px 20px;
+}
+.sec-form .formulario{
+    border-color: var(--color-white) ;
+    /* border: 1px solid var(--color-grey); */
+    padding: 40px 50px;
+    border-radius: 20px;
+}
+.formulario .input-box{
+    margin-bottom: 25px;
+}
+.formulario .input-control::placeholder{
+    color: black;
+    opacity: 2;
+}
+.formulario .input-control{
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    color: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 16px;
+}
+.formulario .input-control:focus{
+    outline: none;
+}
+.formulario .input-link{
+    margin-top: 10px;
+    text-align: right;
+}
+.formulario .btn{
+    height: 45px;
+    width: 100%;
+    font-size:16px ;
+    font-weight: 500;
+    text-transform:capitalize ;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: linear-gradient(to right, #ffcfd2, #f1c0e8);
+    border: none;
+    color: var(--color-black);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.formulario .btn::before{
+    content: "";
+    position: inherit;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.formulario .btn:hover::before{
+    background-color: var(--color-pink);
+}
+.btn:active {
+    background-color: #2bc72b;
+    color: #ffffff;
+}
+.formulario p{
+    text-align: center;
+}
+.contac{
+    display: flex;
+    padding: 20px 0;
+    gap: 20px;
+}
+.contac,.contac2 a{
+    font-size: 12px;
+    max-width: 100;
+    text-decoration: none;
+
+}
+.contac2{
+    padding: 10px 0;
+}

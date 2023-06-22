@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- mediaqueries link -->
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <!-- diseño letras1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon -->
+    <script
+      src="https://kit.fontawesome.com/bdd85886fe.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>BeautySant</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="./Imagenes/b4f540ff05d94766a62da23a52db159c.png"
+        alt="logo"
+      />
+      <nav class="inicio">
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars" style="color: #fffafa"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="info">
+          <il><a href="#">Home</a></il>
+          <il><a href="#">Maquillaje</a></il>
+          <il><a href="#">Skincare</a></il>
+          <il><a href="#">Quienes somos</a></il>
+          <il><a href="./contact.html">Contacto</a></il>
+        </ul>
+
+        <!-- <img class="icon" src="./Imagenes/new icon.jpg" alt="foto-icon" /> -->
+        <label for="cart-toggle" class="cart-label">
+          <img
+            class="cart-icon"
+            src="./Imagenes/new icon.jpg"
+            alt="carrito de compras"
+          />
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <!-- cart -->
+        <div class="cart">
+          <h2>Tus Compras</h2>
+          <div class="cart-item">
+            <img src="./Imagenes/hidratante-img.webp" alt="nft del carrito" />
+            <div class="item-info">
+              <h3 class="item-title">Crema Hidratante</h3>
+              <p class="item-bid">Unidad</p>
+              <span class="item-price">$10.000</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="./Imagenes/contorno-ojos-img.jpg" alt="nft del carrito" />
+            <div class="item-info">
+              <h3 class="item-title">Contorno de Ojos</h3>
+              <p class="item-bid">Unidad</p>
+              <span class="item-price">$4.500</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="./Imagenes/bases-img.jpg"nft del carrito" />
+            <div class="item-info">
+              <h3 class="item-title">Base Light</h3>
+              <p class="item-bid">Unidad</p>
+              <span class="item-price">$5.000</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="./Imagenes/correctores-img.webp" alt="nft del carrito" />
+            <div class="item-info">
+              <h3 class="item-title">Corrector de Ojos</h3>
+              <p class="item-bid">Unidad</p>
+              <span class="item-price">$3.000</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="./Imagenes/FPS.jfif" alt="nft del carrito" />
+            <div class="item-info">
+              <h3 class="item-title">Protector Solar</h3>
+              <p class="item-bid">Unidad</p>
+              <span class="item-price">$7.000</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="./Imagenes/jabon-img.jpg" alt="nft del carrito" />
+            <div class="item-info">
+              <h3 class="item-title">Jabon en Gel</h3>
+              <p class="item-bid">Unidad</p>
+              <span class="item-price">$2.500</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <span class="divider"></span>
+          <div class="cart-total">
+            <p>Total:</p>
+            <span>$32.000</span>
+          </div>
+          <button class="btn-add">Comprar</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Seccion 1 -->
+      <section id="sec1">
+        <div class="cont1">
+          <h1>Linea de Makeup y Skincare para todo tipo de piel</h1>
+          <p>
+            Esta linea esta dedicada a todas las personas que deseen mejorar la
+            textura de su piel, dejandola con un acabado luminoso,hidratado y
+            sin imperfecciones. Es apta para pieles jovenes y maduras.
+          </p>
+          <a href="#">BTS</a>
+        </div>
+        <!-- 1 -->
+        <div class="sec2-0">
+          <img src="./Imagenes/maquillaje-marca-blanca.jpg" alt="Imagen" />
+          <div class="contenedor0">
+            <div class="contenedor-hijo">
+              <h3>"Be Yourself"</h3>
+              <span>BS</span>
+            </div>
+            <!-- 2 -->
+            <div class="contenedor">
+              <div class="cont-img">
+                <div class="parrafo1">
+                  <p>Creadora</p>
+                  <p>Maria Santeliz</p>
+                </div>
+              </div>
+              <div class="parrafo2">
+                <p>Envios</p>
+                <span>Gratis</span>
+              </div>
+            </div>
+            <!-- 3 -->
+          </div>
+        </div>
+      </section>
+      <!-- seccion 2 -->
+      <section id="info2">
+        <h2>Como Empezar Una Buena Rutina De Skincare</h2>
+        <div class="info2-cards-container">
+          <div class="info2-card">
+            <img src="./Imagenes/limpiador.jfif" alt="icon-card1" />
+            <h3>Limpiador Facial</h3>
+            <p>
+              Es importante utilizar un buen limpiador facial dependiendo tu
+              tipo de piel. Para las pieles grasas un gel limpiador es ideal y
+              para pieles secas una leche de limpieza
+            </p>
+          </div>
+          <div class="info2-card">
+            <img src="./Imagenes/cremahid.jfif" alt="icon-card2" />
+            <h3>Crema Hidratante</h3>
+            <p>
+              La crema hidratante no puede faltar en tu rutina de skincare. Las
+              pieles grasas tambien neecsitan hidratacion, para este tipo de
+              piel una crema en gel y liviana es un plus. En cambio las pieles
+              secas necesitan de cremas mas pesadas para evitar la resequedad.
+            </p>
+          </div>
+          <div class="info2-card">
+            <img src="./Imagenes/FPS.jfif" alt="icond-card3" />
+            <h3>Protector Solar (FPS)</h3>
+            <p>
+              Por ultimo y no menos importante el protector solar es
+              indispensable en una rutina, evita las manchas y las arrugas.
+              Debes usarlo todos los dias y retocar cada 3 horas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- info3 -->
+      <section id="info3">
+        <div class="info3-container">
+          <h2>Productos De Nuestra Linea Actual de Makeup</h2>
+          <div class="info3-text">
+            <p>
+              En nuestra linea de maquillaje vas a poder encontrar bases,
+              correctores, blushes, contornos, mascaras de pestañas, etc.
+              Contamos con diferentes colores para cada color de piel.
+            </p>
+            <a href="#">Mas productos</a>
+          </div>
+        </div>
+        <!-- card-1.0 -->
+        <div class="info3-img">
+          <!-- 1 -->
+          <div class="sec2">
+            <img src="./Imagenes/bases-img.jpg" alt="Imagen" />
+            <div class="contenedor0">
+              <div class="contenedor-hijo">
+                <h3>"Base de maquillaje"</h3>
+                <span><a href="#">Comprar</a></span>
+              </div>
+              <!-- 2 -->
+              <div class="contenedor">
+                <div class="cont-img">
+                  <div class="parrafo1">
+                    <p>Marca</p>
+                    <p>wet n wild</p>
+                  </div>
+                </div>
+                <div class="parrafo2">
+                  <p>Precio</p>
+                  <span>$5.000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card-1.2 -->
+          <div class="info3-img">
+            <!-- 1 -->
+            <div class="sec2">
+              <img src="./Imagenes/correctores-img.webp" alt="Imagen" />
+              <div class="contenedor0">
+                <div class="contenedor-hijo">
+                  <h3>"Corrector"</h3>
+                  <span><a href="#">Comprar</a></span>
+                </div>
+                <!-- 2 -->
+                <div class="contenedor">
+                  <div class="cont-img">
+                    <div class="parrafo1">
+                      <p>Marca</p>
+                      <p>Fit Me</p>
+                    </div>
+                  </div>
+                  <div class="parrafo2">
+                    <p>Precio</p>
+                    <span>$3.000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 1.3 -->
+          <div class="info3-img">
+            <!-- 1 -->
+            <div class="sec2">
+              <img src="./Imagenes/labiales-img.png" alt="Imagen" />
+              <div class="contenedor0">
+                <div class="contenedor-hijo">
+                  <h3>"Labiales"</h3>
+                  <span><a href="#">Comprar</a></span>
+                </div>
+                <!-- 2 -->
+                <div class="contenedor">
+                  <div class="cont-img">
+                    <div class="parrafo1">
+                      <p>Marca</p>
+                      <p>Maybelline</p>
+                    </div>
+                  </div>
+                  <div class="parrafo2">
+                    <p>Precio</p>
+                    <span>$1.500</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2.0 -->
+        <div class="info4-card">
+          <div class="info3-img">
+            <div class="sec2">
+              <img src="./Imagenes/jabon-img.jpg" alt="Imagen" />
+              <div class="contenedor0">
+                <div class="contenedor-hijo">
+                  <h3>"Jabon En Gel"</h3>
+                  <span><a href="#">Comprar</a></span>
+                </div>
+                <!-- 2 -->
+                <div class="contenedor">
+                  <div class="cont-img">
+                    <div class="parrafo1">
+                      <p>Marca</p>
+                      <p>Cerave</p>
+                    </div>
+                  </div>
+                  <div class="parrafo2">
+                    <p>Precio</p>
+                    <span>$2.500</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info4-card">
+            <div class="info3-img">
+              <div class="sec2">
+                <img src="./Imagenes/contorno-ojos-img.jpg" alt="Imagen" />
+                <div class="contenedor0">
+                  <div class="contenedor-hijo">
+                    <h3>"Contorno de Ojos"</h3>
+                    <span><a href="#">Comprar</a></span>
+                  </div>
+                  <!-- 2 -->
+                  <div class="contenedor">
+                    <div class="cont-img">
+                      <div class="parrafo1">
+                        <p>Marca</p>
+                        <p>Vichy</p>
+                      </div>
+                    </div>
+                    <div class="parrafo2">
+                      <p>Precio</p>
+                      <span>$10.000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info4-card">
+            <div class="info3-img">
+              <div class="sec2">
+                <img src="./Imagenes/hidrante2-img.webp" alt="Imagen" />
+                <div class="contenedor0">
+                  <div class="contenedor-hijo">
+                    <h3>"Crema Hidratante"</h3>
+                    <span><a href="#">Comprar</a></span>
+                  </div>
+                  <!-- 2 -->
+                  <div class="contenedor">
+                    <div class="cont-img">
+                      <div class="parrafo1">
+                        <p>Marca</p>
+                        <p>Neutrogena</p>
+                      </div>
+                    </div>
+                    <div class="parrafo2">
+                      <p>Precio</p>
+                      <span>$4.500</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button-mas">
+          <span><a href="#">Mas Productos</a></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img
+                src="./Imagenes/b4f540ff05d94766a62da23a52db159c.png"
+                alt="logo BeautySant"
+              />
+            </a>
+          </figure>
+        </div>
+
+        <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>
+            Somos una marca inspirada en el mundo del Makeup y Skincare con el
+            fin de ayudar a las personas a como cuidar su rostro de manera
+            correcta y eficaz dependiendo del tipo de piel.
+          </p>
+          <p>
+            Adicional, trabajamos junto con las mejores marcas del mercado para
+            seguir innovando nuevos productos de calidad y que se ajuste a tu
+            presupuesto.
+          </p>
+        </div>
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-whatsapp"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grupo-2">
+        <small
+          >&copy; 2023 <b>BeautySant</b>- Todos Los Derechos Reservados.
+        </small>
+      </div>
+    </footer>
+  </body>
+</html>
